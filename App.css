@@ -1,0 +1,264 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.parent-container{
+    display:flex;
+    flex-wrap: wrap;
+}
+.child-container{
+    padding: 5px;
+    margin: 5px;
+    border:2px solid black;
+    
+    border-radius: 20px;
+   
+}
+.image{
+    width:300px;
+    height:300px;
+}
+
+.image1{
+    width:100%;
+    height:30px;
+    margin-block: 0.5rem;
+}
+.image-alt{
+   
+    width:300px;
+    height:300px;
+
+}
+.child-container{
+    width: 300px;
+  padding: 20px;
+  border-radius: 10px;
+  /* background-color: #e5e7eb; */
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+}
+
+.image-alt,
+.image1 {
+  background: linear-gradient(90deg, #e0e0e0 25%, #f6f6f6 50%, #e0e0e0 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite linear;
+  border-radius: 4px;
+}
+
+@keyframes shimmer {
+    0% {
+        opacity: 1;;
+    }
+    100% {
+        opacity: 0.5;
+    }
+  }
+.title{
+    background-color: black;
+    color: white;
+    font-size: 12px;
+    height: 50px;
+}
+
+.title1{
+    display: flex;
+    justify-content: space-between;
+    color: white !important;
+    padding-block: 10px;
+    margin-left:10px;
+    margin-right:10px;
+    font-size:16px;
+}
+.image-container{
+    display: flex;
+    justify-content: center;
+    margin-block:40px;
+}
+.arrows{
+    width:40px;
+    height:40px;
+    margin-top: 150px;
+}
+.banner{
+    width:800px;
+    height: 500px;
+}
+.accordion-container{
+   flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.title-accordion{
+    background-color: gray;
+    padding: 30px;
+    height: 30px;
+    margin: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.accordion-body{
+    margin: 30px;
+}
+.profile-pic{
+    width:30px;
+    height: 30px;
+}
+.comments-container{
+    display: flex;
+    
+    margin-left:10px;
+    
+}
+.username{
+    font-weight:bold;
+}
+.image-container{
+    padding: 10px;
+}
+.check{
+    display: flex;
+    flex-direction: column;
+    border-left:black 2px solid;
+    padding-left:10px;
+}
+.card-desc{
+    width:300px
+}
+.prod-container{
+    width:300px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.parent-prod{
+    display: flex;
+    flex-wrap: wrap;
+}
+.pageno{
+    padding-right:10px;
+    cursor: pointer;
+}
+.search-container{
+    margin:10px;
+}
+.chat-container{
+    display: flex;
+}
+.msg-container{
+    margin: 10px;
+    height: 600px;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column-reverse;
+}
+.parent-chat{
+    display: flex;
+}
+.image2{
+    width: 20px;
+    height: 20px;
+}
+/* tab form */
+.tab-container{
+    display: flex;
+    justify-content: space-between;
+    border: black 2px solid;
+    border-radius: 25px;
+    margin:10px;
+}
+.FECard{
+    border:black 1px solid;
+    border-radius: 2px;
+    width: 300px;
+}
+.FEContainer{
+    display: flex;
+    flex-wrap: wrap;
+}
+.pagenos{
+    height: 90px;
+    width:90px;
+    background-color: beige;
+    display: flex;
+}
+.page-btns{
+    margin: 10px;
+}
+.image-card{
+    width:100px;
+    height: 100px;
+}
+.card-container{
+    margin: 15px;
+}
+.outer{
+    /* background-color: green;; */
+    width: 80%;
+    height: 20px;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.inner{
+    background-color: green;;
+    height: 20px;
+    text-align: center;
+    transition:  0.5 ease-in ;
+    /* animation: "move 1.5s infinite linear"; */
+   
+   
+}
+.progress-text{
+    
+}
+@keyframes move {
+    0% { left: -30%; }
+    100% { left: 100%; }
+  }
+/* file explorer */
+.file-container{
+    padding-left: 20px;
+}
+.folder-icon{
+    width:20px;
+}
+.btn-cursor{
+    cursor: pointer;
+    padding: 10px;
+}
